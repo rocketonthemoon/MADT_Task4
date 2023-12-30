@@ -20,6 +20,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.taskfour.ui.theme.TaskFourTheme
 import android.widget.ArrayAdapter
 
+
+// the main problem im facing now will be how to refresh the entire UI every time when a new note added or deleted , i don't know if it efficient
+// i watched a tutorial and referenced some docs and i found there is a good new way to do it by using RecycleView , will be implementing in future version
 class MainActivity : AppCompatActivity() {
     private var notes: MutableList<Note> = mutableListOf()
     private lateinit var adapter: ArrayAdapter<String>
